@@ -1,0 +1,47 @@
+﻿@model CapstoneProject_MySoldiers_DanWay.TbEnlistedRank
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="jumbotron">
+    <div>
+        <h3>Enlisted Rank Details</h3>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EnlistedRankPayGrade)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EnlistedRankPayGrade)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EnlistedRankRank)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EnlistedRankRank)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EnlistedRankAbbreviation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EnlistedRankAbbreviation)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EnlistedRankDesc)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EnlistedRankDesc)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EnlistedRankIsActive)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EnlistedRankIsActive)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.EnlistedRankId">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

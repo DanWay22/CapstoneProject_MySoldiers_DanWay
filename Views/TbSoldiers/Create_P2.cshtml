@@ -1,0 +1,85 @@
+﻿@model CapstoneProject_MySoldiers_DanWay.TbSoldier
+
+@{
+    ViewData["Title"] = "Create_P2";
+}
+<div class="jumbotron">
+    <h3>Add Soldier (Page 2)</h3>
+    <hr />
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    <form asp-action="Create_P2">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row g-3">
+            <div class="col-md-2">
+                <label asp-for="SoldierHeight" class="control-label"></label>
+                <input asp-for="SoldierHeight" class="form-control" />
+                <span asp-validation-for="SoldierHeight" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="SoldierWeight" class="control-label"></label>
+                <input asp-for="SoldierWeight" class="form-control" />
+                <span asp-validation-for="SoldierWeight" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="SoldierHairColor" class="control-label"></label>
+                <input asp-for="SoldierHairColor" class="form-control" />
+                <span asp-validation-for="SoldierHairColor" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-2">
+                <label asp-for="SoldierBloodType" class="control-label"></label>
+                <input asp-for="SoldierBloodType" class="form-control" />
+                <span asp-validation-for="SoldierBloodType" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="SoldierDor" class="control-label"></label>
+                <input asp-for="SoldierDor" class="form-control" />
+                <span asp-validation-for="SoldierDor" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="SoldierPriMos" class="control-label"></label>
+                <input asp-for="SoldierPriMos" class="form-control" />
+                <span asp-validation-for="SoldierPriMos" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-2">
+                <label asp-for="SoldierEts" class="control-label"></label>
+                <input asp-for="SoldierEts" class="form-control" />
+                <span asp-validation-for="SoldierEts" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-2">
+                <label asp-for="SoldierPebd" class="control-label"></label>
+                <input asp-for="SoldierPebd" class="form-control" />
+                <span asp-validation-for="SoldierPebd" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="SoldierMaritalStatus" class="control-label"></label>
+                <input asp-for="SoldierMaritalStatus" class="form-control" />
+                <span asp-validation-for="SoldierMaritalStatus" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-2">
+                <label asp-for="SoldierBloodType" class="control-label"></label>
+                <input asp-for="SoldierBloodType" class="form-control" />
+                <span asp-validation-for="SoldierBloodType" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierReligion" class="control-label"></label>
+                <input asp-for="SoldierReligion" class="form-control" />
+                <span asp-validation-for="SoldierReligion" class="text-danger"></span>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CapstoneProject_MySoldiers_DanWay.TbSoldier>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="jumbotron">
+    <h2>Soldier Information</h2>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table table-striped">
+        <thead class="table-light">
+            <tr>
+                <th></th>
+                <th></th>
+                <th scope="col">Rank</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">SSN</th>
+                <th scope="col">Suffix</th>
+                <th scope="col">Organization</th>
+                <th scope="col">PMOS</th>
+                <th scope="col">SMOS</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+
+            <tbody class="table table-hover">
+                <tr>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.SoldierId }) |
+
+                        @Html.ActionLink("Details", "Details", new { id = item.SoldierId }) |
+
+                        @Html.ActionLink("Delete", "Delete", new { id = item.SoldierId })
+                    </td>
+                    <td></td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoldierCurrRank)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoldierSsn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoldierSuffix)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoldierPriMos)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoldierSecMos)
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>
+        
+}

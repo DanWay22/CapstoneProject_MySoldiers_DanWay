@@ -1,0 +1,50 @@
+﻿@model CapstoneProject_MySoldiers_DanWay.TbOfficerRank
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="jumbotron">
+
+    <h3>Officer Rank Add</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="OfficerRankPayGrade" class="control-label"></label>
+                    <input asp-for="OfficerRankPayGrade" class="form-control" />
+                    <span asp-validation-for="OfficerRankPayGrade" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficerRankRank" class="control-label"></label>
+                    <input asp-for="OfficerRankRank" class="form-control" />
+                    <span asp-validation-for="OfficerRankRank" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficerRankAbbreviation" class="control-label"></label>
+                    <input asp-for="OfficerRankAbbreviation" class="form-control" />
+                    <span asp-validation-for="OfficerRankAbbreviation" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficerRankDesc" class="control-label"></label>
+                    <input asp-for="OfficerRankDesc" class="form-control" />
+                    <span asp-validation-for="OfficerRankDesc" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="OfficerRankIsActive" /> 
+                        @Html.DisplayNameFor(model => model.OfficerRankIsActive)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

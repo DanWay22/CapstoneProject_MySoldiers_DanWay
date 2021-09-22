@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CapstoneProject_MySoldiers_DanWay</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/lib/Images/us_army_logo_2x.gif" alt="US Army">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-brand">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" name="SiteSearchForm" accept-charset="UTF-8" action="https://search.mysoldiers.com/search" method="get">
+                        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-lable="Search">
+                        <button class="btn btn-warning" type="submit">Search</button>
+                    </form>
+            </div>
+
+            <partial name="_LoginPartial" />
+        </div>
+    </nav>
+    <div class="bg-dark w3-sidebar w3-bar-block w3-card w3-animate-left collapse" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+                onclick="w3_close()">
+            Close &times;
+        </button>
+
+        <ul class="navbar-nav navbar-brand">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="TbSoldiers" asp-action="Index">Soldiers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="TbEnlistedRanks" asp-action="Index">Enlisted Ranks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="TbOfficerRanks" asp-action="Index">Officer Ranks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="TbRoles" asp-action="Index">Roles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="TbSoldiers" asp-action="Create_P2"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="TbSoldiers" asp-action="Edit_P2"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <nav class="navbar navbar-dark">
+            <button class="navbar-toggler"
+                    id="navbar-toggler-icon"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    onclick="w3_open()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - CapstoneProject_MySoldiers_DanWay - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+    <script>
+        function w3_open() {
+            document.getElementById("navbar-toggler-icon").style.display = 'none';
+            document.getElementById("main").style.marginLeft = "20%";
+            document.getElementById("mySidebar").style.width = "20%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("navbar-toggler-icon").style.display = "inline";
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+﻿@model IEnumerable<CapstoneProject_MySoldiers_DanWay.TbSoldier>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierFname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierMname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierLname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierSuffix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierDob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierZip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierBasicEntryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierBasicGradDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierAitEntryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierAitGradDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierEts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierTigYears)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierTigMonths)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierTisYears)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierTisMonths)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierSsn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierCurrRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierDor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierPebd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierPriMos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierSecMos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierAltMos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierHairColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierEyeColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierBloodType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierMaritalStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierReligion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierHeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoldierWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierFname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierMname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierLname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierSuffix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierDob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierZip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierBasicEntryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierBasicGradDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierAitEntryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierAitGradDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierEts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierTigYears)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierTigMonths)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierTisYears)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierTisMonths)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierSsn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierCurrRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierDor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierPebd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierPriMos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierSecMos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierAltMos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierHairColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierEyeColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierBloodType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierMaritalStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierReligion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierHeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoldierWeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SoldierId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SoldierId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SoldierId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

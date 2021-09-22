@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CapstoneProject_MySoldiers_DanWay.TbOfficerRank>
+
+@{
+    ViewData["Title"] = "Index";
+}
+    <div class="jumbotron">
+        <p>
+            <a asp-action="Create">Add New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfficerRankPayGrade)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfficerRankRank)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfficerRankAbbreviation)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfficerRankIsActive)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.OfficerRankId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.OfficerRankId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.OfficerRankId">Delete</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OfficerRankPayGrade)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OfficerRankRank)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OfficerRankAbbreviation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OfficerRankIsActive)
+                    </td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>

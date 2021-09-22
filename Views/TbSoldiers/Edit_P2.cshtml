@@ -1,0 +1,91 @@
+﻿@model CapstoneProject_MySoldiers_DanWay.TbSoldier
+
+@{
+    ViewData["Title"] = "Edit_P2";
+}
+<div class="jumbotron">
+    <h3>Soldier Edit (Page 2)</h3>
+    <div>
+        <a asp-action="Index">Back to List</a>
+        @*<form method="post" asp-action="Edit_P2" asp-controller="TbSoldiers">
+            <input type="submit" value="Page 2" class="btn btn-primary" />
+        </form>*@
+    </div>
+
+    <form asp-action="Edit_P2">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <hr />
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label asp-for="SoldierHeight" class="control-label"></label>
+                <input asp-for="SoldierHeight" class="form-control" />
+                <span asp-validation-for="SoldierHeight" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierWeight" class="control-label"></label>
+                <input asp-for="SoldierWeight" class="form-control" />
+                <span asp-validation-for="SoldierWeight" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierHairColor" class="control-label"></label>
+                <input asp-for="SoldierHairColor" class="form-control" />
+                <span asp-validation-for="SoldierHairColor" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label asp-for="SoldierBloodType" class="control-label"></label>
+                <input asp-for="SoldierBloodType" class="form-control" />
+                <span asp-validation-for="SoldierBloodType" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierDor" class="control-label"></label>
+                <input asp-for="SoldierDor" class="form-control" />
+                <span asp-validation-for="SoldierDor" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierPriMos" class="control-label"></label>
+                <input asp-for="SoldierPriMos" class="form-control" />
+                <span asp-validation-for="SoldierPriMos" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label asp-for="SoldierEts" class="control-label"></label>
+                <input asp-for="SoldierEts" class="form-control" />
+                <span asp-validation-for="SoldierEts" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-3">
+                <label asp-for="SoldierPebd" class="control-label"></label>
+                <input asp-for="SoldierPebd" class="form-control" />
+                <span asp-validation-for="SoldierPebd" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierMaritalStatus" class="control-label"></label>
+                <input asp-for="SoldierMaritalStatus" class="form-control" />
+                <span asp-validation-for="SoldierMaritalStatus" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label asp-for="SoldierBloodType" class="control-label"></label>
+                <input asp-for="SoldierBloodType" class="form-control" />
+                <span asp-validation-for="SoldierBloodType" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="SoldierReligion" class="control-label"></label>
+                <input asp-for="SoldierReligion" class="form-control" />
+                <span asp-validation-for="SoldierReligion" class="text-danger"></span>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+
+
+

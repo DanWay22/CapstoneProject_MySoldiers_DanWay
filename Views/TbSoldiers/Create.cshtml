@@ -1,0 +1,220 @@
+﻿@model CapstoneProject_MySoldiers_DanWay.TbSoldier
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TbSoldier</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SoldierFname" class="control-label"></label>
+                <input asp-for="SoldierFname" class="form-control" />
+                <span asp-validation-for="SoldierFname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierMname" class="control-label"></label>
+                <input asp-for="SoldierMname" class="form-control" />
+                <span asp-validation-for="SoldierMname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierLname" class="control-label"></label>
+                <input asp-for="SoldierLname" class="form-control" />
+                <span asp-validation-for="SoldierLname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierSuffix" class="control-label"></label>
+                <input asp-for="SoldierSuffix" class="form-control" />
+                <span asp-validation-for="SoldierSuffix" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierDob" class="control-label"></label>
+                <input asp-for="SoldierDob" class="form-control" />
+                <span asp-validation-for="SoldierDob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierAge" class="control-label"></label>
+                <input asp-for="SoldierAge" class="form-control" />
+                <span asp-validation-for="SoldierAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierAddress" class="control-label"></label>
+                <input asp-for="SoldierAddress" class="form-control" />
+                <span asp-validation-for="SoldierAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierCity" class="control-label"></label>
+                <input asp-for="SoldierCity" class="form-control" />
+                <span asp-validation-for="SoldierCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierState" class="control-label"></label>
+                <input asp-for="SoldierState" class="form-control" />
+                <span asp-validation-for="SoldierState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierZip" class="control-label"></label>
+                <input asp-for="SoldierZip" class="form-control" />
+                <span asp-validation-for="SoldierZip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierRole" class="control-label"></label>
+                <input asp-for="SoldierRole" class="form-control" />
+                <span asp-validation-for="SoldierRole" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierBasicEntryDate" class="control-label"></label>
+                <input asp-for="SoldierBasicEntryDate" class="form-control" />
+                <span asp-validation-for="SoldierBasicEntryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierBasicGradDate" class="control-label"></label>
+                <input asp-for="SoldierBasicGradDate" class="form-control" />
+                <span asp-validation-for="SoldierBasicGradDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierAitEntryDate" class="control-label"></label>
+                <input asp-for="SoldierAitEntryDate" class="form-control" />
+                <span asp-validation-for="SoldierAitEntryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierAitGradDate" class="control-label"></label>
+                <input asp-for="SoldierAitGradDate" class="form-control" />
+                <span asp-validation-for="SoldierAitGradDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierEts" class="control-label"></label>
+                <input asp-for="SoldierEts" class="form-control" />
+                <span asp-validation-for="SoldierEts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierTigYears" class="control-label"></label>
+                <input asp-for="SoldierTigYears" class="form-control" />
+                <span asp-validation-for="SoldierTigYears" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierTigMonths" class="control-label"></label>
+                <input asp-for="SoldierTigMonths" class="form-control" />
+                <span asp-validation-for="SoldierTigMonths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierTisYears" class="control-label"></label>
+                <input asp-for="SoldierTisYears" class="form-control" />
+                <span asp-validation-for="SoldierTisYears" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierTisMonths" class="control-label"></label>
+                <input asp-for="SoldierTisMonths" class="form-control" />
+                <span asp-validation-for="SoldierTisMonths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierSsn" class="control-label"></label>
+                <input asp-for="SoldierSsn" class="form-control" />
+                <span asp-validation-for="SoldierSsn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierGender" class="control-label"></label>
+                <input asp-for="SoldierGender" class="form-control" />
+                <span asp-validation-for="SoldierGender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierCurrRank" class="control-label"></label>
+                <input asp-for="SoldierCurrRank" class="form-control" />
+                <span asp-validation-for="SoldierCurrRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierDor" class="control-label"></label>
+                <input asp-for="SoldierDor" class="form-control" />
+                <span asp-validation-for="SoldierDor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierPebd" class="control-label"></label>
+                <input asp-for="SoldierPebd" class="form-control" />
+                <span asp-validation-for="SoldierPebd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierPriMos" class="control-label"></label>
+                <input asp-for="SoldierPriMos" class="form-control" />
+                <span asp-validation-for="SoldierPriMos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierSecMos" class="control-label"></label>
+                <input asp-for="SoldierSecMos" class="form-control" />
+                <span asp-validation-for="SoldierSecMos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierAltMos" class="control-label"></label>
+                <input asp-for="SoldierAltMos" class="form-control" />
+                <span asp-validation-for="SoldierAltMos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierHairColor" class="control-label"></label>
+                <input asp-for="SoldierHairColor" class="form-control" />
+                <span asp-validation-for="SoldierHairColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierEyeColor" class="control-label"></label>
+                <input asp-for="SoldierEyeColor" class="form-control" />
+                <span asp-validation-for="SoldierEyeColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierBloodType" class="control-label"></label>
+                <input asp-for="SoldierBloodType" class="form-control" />
+                <span asp-validation-for="SoldierBloodType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierMaritalStatus" class="control-label"></label>
+                <input asp-for="SoldierMaritalStatus" class="form-control" />
+                <span asp-validation-for="SoldierMaritalStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierReligion" class="control-label"></label>
+                <input asp-for="SoldierReligion" class="form-control" />
+                <span asp-validation-for="SoldierReligion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierHeight" class="control-label"></label>
+                <input asp-for="SoldierHeight" class="form-control" />
+                <span asp-validation-for="SoldierHeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoldierWeight" class="control-label"></label>
+                <input asp-for="SoldierWeight" class="form-control" />
+                <span asp-validation-for="SoldierWeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddDate" class="control-label"></label>
+                <input asp-for="AddDate" class="form-control" />
+                <span asp-validation-for="AddDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddId" class="control-label"></label>
+                <input asp-for="AddId" class="form-control" />
+                <span asp-validation-for="AddId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModDate" class="control-label"></label>
+                <input asp-for="ModDate" class="form-control" />
+                <span asp-validation-for="ModDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModId" class="control-label"></label>
+                <input asp-for="ModId" class="form-control" />
+                <span asp-validation-for="ModId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

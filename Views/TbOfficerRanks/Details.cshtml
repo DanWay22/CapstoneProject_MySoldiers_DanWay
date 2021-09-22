@@ -1,0 +1,55 @@
+﻿@model CapstoneProject_MySoldiers_DanWay.TbOfficerRank
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="jumbotron">
+    <div>
+        <h3>Officer Rank Details</h3>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.OfficerRankId">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OfficerRankPayGrade)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OfficerRankPayGrade)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OfficerRankRank)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OfficerRankRank)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OfficerRankAbbreviation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OfficerRankAbbreviation)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OfficerRankDesc)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OfficerRankDesc)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OfficerRankInsignia)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OfficerRankInsignia)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OfficerRankIsActive)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OfficerRankIsActive)
+            </dd>
+        </dl>
+    </div>
+</div>
